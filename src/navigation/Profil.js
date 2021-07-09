@@ -65,6 +65,17 @@ const Profil = (props) => (
           <DrawerItem 
               icon={({color, size}) => (
                   <Icon 
+                  name="account-outline" 
+                  color={color}
+                  size={size}
+                  />
+              )}
+              label="Mes véhiculs"
+              onPress={() => {props.navigation.navigate('ListAuto')}}
+          />
+          <DrawerItem 
+              icon={({color, size}) => (
+                  <Icon 
                     name="settings-helper" 
                     color={color}
                     size={size}

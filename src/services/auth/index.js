@@ -111,8 +111,10 @@ const setUserDate = (user) => {
       email: user.email,
       displayName: user.displayName,
       photoURL: user.photoURL,
-      emailVerified: user.emailVerified
+      emailVerified: user.emailVerified,
+      autos: [],
+      biginCourse: false
    }
 
-   firestore().doc(`users/${user.uid}`).set(userData, {merge: true})
+   firestore().doc(`drivers/${user.uid}`).set(userData, {merge: true})
 }
